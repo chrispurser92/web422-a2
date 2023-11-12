@@ -1,0 +1,13 @@
+.navbar{
+    background-color:rgb(248, 229, 217) !important;
+    border-bottom: rgb(185, 185, 185) 2px solid !important;
+}
+
+.nav-container{
+    height: auto;
+    background-color: rgb(248, 229, 217) !important;
+}
+
+.link-items{
+    margin-left: 33%;
+}

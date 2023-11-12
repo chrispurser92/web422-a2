@@ -1,0 +1,18 @@
+<div class="card" style="width: 18rem; border:none; margin-left: 170px !important;" [ngStyle]="{'background-color':color}">
+    <div class="card-body">
+        <img src="{{path}}" style="width:90px; height:90px; margin-left:33%; border-radius: 100%;" (click)="toggleBio()">
+        <h4 class="card-title text-center" style="font-weight: bold;">{{name}}</h4>
+        <h6 class="card-text text-center">{{job}}</h6>
+        <p class="card-text text-center">{{rate}}</p>
+        <div class="text-center">
+            <a href="#" class="mx-1"><img src="assets\images\linkedIn.png" style="width:25px; height:25px;"></a>
+            <a href="#" class="mx-1"><img src="assets\images\twitter.png" style="width:25px; height:25px;"></a>
+            <a href="#" class="mx-1"><img src="assets\images\github.png" style="width:25px; height:25px;"></a>
+            <a href="#" class="mx-1"><img src="assets\images\email.png" style="width:25px; height:25px;"></a>
+        </div>
+    </div>
+    <div style="width:100%;">
+        <app-bio-area style="width:100%" *ngIf="showBio" [name]="name" [job]="job" [bio]="bio" (closeBio)="toggleBio()"></app-bio-area> 
+    </div>
+</div>
+
